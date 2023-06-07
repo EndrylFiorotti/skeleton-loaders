@@ -1,3 +1,9 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+*.log
+*.iml
+*.idea/
+build/
+.gradle/
