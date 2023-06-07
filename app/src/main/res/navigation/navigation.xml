@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/skeletonFragment">
+
+    <fragment
+        android:id="@+id/skeletonFragment"
+        android:name="com.example.skeletonloader.view.fragments.SkeletonFragment"
+        android:label="SkeletonFragment"
+        tools:layout="@layout/fragment_skeleton" >
+        <action
+            android:id="@+id/from_skeletonFragment_to_shimmerFragment"
+            app:destination="@id/shimmerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shimmerFragment"
+        android:name="com.example.skeletonloader.view.fragments.ShimmerFragment"
+        android:label="ShimmerFragment"
+        tools:layout="@layout/fragment_shimmer">
+        <action
+            android:id="@+id/from_shimmerFragment_to_lottieFragment"
+            app:destination="@id/lottieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lottieFragment"
+        android:name="com.example.skeletonloader.view.fragments.LottieFragment"
+        android:label="LottieFragment"
+        tools:layout="@layout/fragment_lottie"/>
+</navigation>
