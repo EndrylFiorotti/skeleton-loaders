@@ -28,5 +28,9 @@
         android:id="@+id/lottieFragment"
         android:name="com.example.skeletonloader.view.fragments.LottieFragment"
         android:label="LottieFragment"
-        tools:layout="@layout/fragment_lottie"/>
+        tools:layout="@layout/fragment_lottie">
+        <action
+            android:id="@+id/from_lottieFragment_to_skeletonFragment"
+            app:destination="@id/skeletonFragment" />
+    </fragment>
 </navigation>

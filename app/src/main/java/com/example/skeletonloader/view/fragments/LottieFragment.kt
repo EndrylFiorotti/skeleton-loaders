@@ -27,6 +27,7 @@ class LottieFragment : Fragment(R.layout.fragment_lottie) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.toolbar.root.title = "Lottie"
         lottieConfig()
         setUpObservers()
         displayButton()
@@ -69,7 +70,7 @@ class LottieFragment : Fragment(R.layout.fragment_lottie) {
 
     private fun buttonClick() {
         binding.btnNext.setOnClickListener {
-            findNavController().navigate(R.id.from_shimmerFragment_to_lottieFragment)
+            findNavController().navigate(R.id.from_lottieFragment_to_skeletonFragment)
         }
     }
 }

@@ -26,6 +26,7 @@ class ShimmerFragment : Fragment(R.layout.fragment_shimmer) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.toolbar.root.title = "Shimmer"
         binding.shimmerComponent.startShimmer()
         setUpObservers()
         displayButton()

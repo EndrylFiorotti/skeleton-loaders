@@ -29,6 +29,7 @@ class SkeletonFragment : Fragment(R.layout.fragment_skeleton) {
         super.onViewCreated(view, savedInstanceState)
 
         startSkeletonAnimation(binding.skeletonComponent)
+        binding.toolbar.root.title = "Personal Skeleton"
         setUpObservers()
         displayButton()
     }
